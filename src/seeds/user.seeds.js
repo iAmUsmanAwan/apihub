@@ -15,7 +15,7 @@ import { USERS_COUNT } from "./_constants.js";
 // Array of fake users
 const users = new Array(USERS_COUNT).fill("_").map(() => ({
   avatar: {
-    url: faker.internet.avatar(),
+    url: faker.image.avatarLegacy(),
     localPath: "",
   },
   username: faker.internet.userName(),
